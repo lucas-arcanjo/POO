@@ -1,0 +1,12 @@
+
+public class ExercicioFatorial {
+
+	public static void main(String[] args) {
+		int fatorial = 1;
+		int total = 0;
+		for(int contador = 1; contador <= 10; contador++) {
+			total += fatorial;
+			System.out.println(contador * total);
+		}
+	}
+}
