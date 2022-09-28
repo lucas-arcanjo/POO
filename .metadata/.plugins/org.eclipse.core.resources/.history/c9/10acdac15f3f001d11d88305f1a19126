@@ -8,8 +8,9 @@ public class CriaConta {
 		System.out.println(primeiraConta.saldo);
 		Conta segundaConta = new Conta();
 		segundaConta.saldo = 60;
-		System.out.println("Primeira Conta " + primeiraConta.saldo);
-		System.out.println("Segunda Conta " + segundaConta.saldo);		
+		System.out.println("Primeira Conta" + primeiraConta.saldo);
+		System.out.println("Segunda Cona" + segundaConta.saldo);
+		
 	}
 
 }
