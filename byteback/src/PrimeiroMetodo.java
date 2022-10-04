@@ -9,14 +9,17 @@ public class PrimeiroMetodo {
 		contaLucas.deposita(50);
 		System.out.println(contaLucas.saldo);
 		
-		boolean saqueDeuCerto = contaLucas.saca(30);
 		System.out.println(contaLucas.saldo);
-		System.out.println(saqueDeuCerto);
 		
 		Conta contaAline = new Conta();
 		contaAline.saldo = 3000;
 		
-		contaAline.tranfere(130, contaLucas);
+		boolean saqueDeuCerto = contaAline.tranfere(130, contaLucas);
+		if (saqueDeuCerto) {
+			System.out.println("Tranferência feita com sucesso");
+		} else {
+			System.out.println("Faltou dinheiro");
+		}
 		System.out.println(contaAline.saldo);
 		System.out.println(contaLucas.saldo);
 	}
