@@ -13,5 +13,11 @@ public class PrimeiroMetodo {
 		System.out.println(contaLucas.saldo);
 		System.out.println(saqueDeuCerto);
 		
+		Conta contaAline = new Conta();
+		contaAline.saldo = 3000;
+		
+		contaAline.tranfere(130, contaLucas);
+		System.out.println(contaAline.saldo);
+		System.out.println(contaLucas.saldo);
 	}
 }

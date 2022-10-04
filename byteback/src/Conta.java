@@ -16,4 +16,13 @@ public class Conta {
 			return false;
 		}
 	}
+	
+	public boolean tranfere(double valor, Conta referencia) {
+		if (this.saldo >= valor) {
+			this.saldo -= valor;
+			referencia.saldo += valor;
+			return true;
+		}
+		return false;
+	}
 }
