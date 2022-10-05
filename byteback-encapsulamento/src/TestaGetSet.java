@@ -3,7 +3,7 @@ public class TestaGetSet {
 
 	public static void main(String[] args) {
 		
-		Conta conta = new Conta();
+		Conta conta = new Conta(1227, 321);
 		conta.setNumero(1227);
 		System.out.println(conta.getNumero());
 		
@@ -12,7 +12,7 @@ public class TestaGetSet {
 		lucas.setNome("lucas");
 		System.out.println(lucas.getNome());
 		
-		Conta contaTitular = new Conta();
+		Conta contaTitular = new Conta(322, 22);
 		contaTitular.setTitular(lucas);
 		
 		System.out.println(contaTitular.getTitular().getNome());
