@@ -1,10 +1,10 @@
 
 public class Funcionario {
 
-	String nome;
-	String cpf;
-	double salario;
-	
+	private String nome;
+	private String cpf;
+	private double salario;
+
 	public double getBonificacao() {
 		return salario * 0.1;
 	}
